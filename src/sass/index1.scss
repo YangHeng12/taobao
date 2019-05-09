@@ -1,0 +1,196 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_6hsoce44u3y/iconfont.woff') format('woff');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$wrap_width:1190px;
+$center_div:0 auto;
+$margin_top:10px;
+%wrap {
+    width: $wrap_width;
+    margin: $center_div;
+    margin-top: $margin_top;
+}
+
+body {
+    font-size: 12px;
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_top,
+.header_logoseek,
+.mainclass,
+.navbanner,
+.shopping,
+.competition,
+.midimg,
+.goodstore,
+.vogue,
+.qufeature,
+.economics,
+.hotsale,
+.conjecture,
+.equity,
+.footercont {
+    @extend %wrap;
+}
+
+.header_top,
+.header_logoseek,
+.mainclass,
+.navbanner {
+    margin-top: 0;
+}
+
+.border_tran {
+    border: 1px solid transparent;
+    &:hover {
+        border-color: #f40!important;
+    }
+}
+
+.box_hd {
+    color: #28ABFF;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    padding-left: 32px;
+    margin-top: 5px;
+    line-height: 48px;
+    font-size: 20px;
+    i {
+        display: inline-block;
+        height: 16px;
+        width: 4px;
+        background-repeat: repeat-x;
+        background-image: linear-gradient(45deg, #0087ff, #3bc7ff);
+        background: #28ABFF;
+        margin-right: 5px;
+    }
+    em {
+        font-style: normal;
+    }
+}
+
+
+/* 1.最顶部头部盒子开始 */
+
+@import "header";
+
+/* 1.最顶部头部盒子结束 */
+
+// 楼梯
+@import "louti";
+
+/* 2.logo和搜索框盒子开始 */
+
+@import "header_logoseek";
+
+/* 2.logo和搜索框盒子结束 */
+
+
+/* 3. 主体市场盒子开始 */
+
+@import "mainclass";
+
+/* 3. 主体市场盒子结束 */
+
+
+/* 4.二级导航＋轮播图等开始 */
+
+@import "navbanner";
+
+/* 4.二级导航＋轮播图等结束 */
+
+
+/* 5.有好货+爱逛街开始 */
+
+@import "shopping";
+
+/* 5.有好货+爱逛街结束 */
+
+
+/* 6.淘抢购开始 */
+
+@import "competition";
+
+/* 6.淘抢购结束 */
+
+
+/* 7.中间广告图开始 */
+
+.midimg {
+    height: 70px;
+    margin-top: 10px;
+}
+
+
+/* 7.中间广告图结束 */
+
+
+/* 每日好店+淘宝直播开始 */
+
+@import "goodstore";
+
+/* 每日好店+淘宝直播结束 */
+
+
+/* 时尚爆料王开始 */
+
+@import "vogue";
+
+/* 时尚爆料王结束 */
+
+
+/* 品质生活家+特色玩味空开始 */
+
+@import "qufeature";
+
+/* 品质生活家+特色玩味空结束 */
+
+
+/* 实惠专业户开始 */
+
+@import "economics";
+
+/* 实惠专业户结束 */
+
+
+/* 热卖单品开始 */
+
+@import "hotsale";
+
+/* 热卖单品结束 */
+
+
+/* 猜你喜欢开始 */
+
+@import "conjecture";
+
+/* 猜你喜欢结束 */
+
+
+/* 消费者保障等开始 */
+
+@import "equity";
+
+/* 消费者保障等结束 */
+
+
+/* 底部导航链接开始 */
+
+@import "footer";
+
+/* 底部导航链接结束 */

@@ -1,0 +1,67 @@
+@charset "utf-8";
+.economics {
+    height: 251px;
+    background-color: #fff;
+}
+
+.economics_hd {
+    h3 {
+        color: #31ba98;
+        i {
+            background-image: linear-gradient(45deg, #b4ec51, #31ba98);
+            background: #31ba98;
+        }
+    }
+}
+
+.box_bd>div {
+    float: left;
+    width: 216px;
+    height: 200px;
+    border: 1px solid transparent;
+    border-bottom-color: #f4f4f4;
+    border-right-color: #f4f4f4;
+    padding-left: 20px;
+    h4 {
+        margin-top: 24px;
+        line-height: 26px;
+        height: 26px;
+        font-weight: normal;
+        font-size: 18px;
+        color: #333;
+    }
+    a {
+        display: inline-block;
+        position: absolute;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .item_l {
+        margin-left: 131px;
+        .hdtitle {
+            margin-top: 22px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+        }
+        .bdtitle {
+            font-size: 14px;
+            color: #999;
+            line-height: 22px;
+        }
+        a {
+            position: static;
+            width: 76px;
+            height: 22px;
+            line-height: 22px;
+            color: #ff5000;
+            text-align: center;
+            border: 1px solid #ff5000;
+            border-radius: 12px;
+            margin-top: 13px;
+            display: block;
+        }
+    }
+}

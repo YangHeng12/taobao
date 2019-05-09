@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/font_6hsoce44u3y/iconfont.woff") format("woff");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header_top 开始*/
+.header_hd {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 22px 0;
+  height: 44px;
+}
+.header_hd #logo_wrap {
+  display: block;
+  float: left;
+  zoom: 1;
+  width: 110px;
+  height: 44px;
+}
+.header_hd #logo_wrap img {
+  width: 110px;
+}
+.header_hd .hd_left {
+  width: 880px;
+  color: #6C6C6C;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ffb4a8;
+  background-color: #fef2f2;
+  line-height: 16px;
+  padding: 6px 10px;
+  overflow: hidden;
+}
+.header_hd .hd_left p {
+  font-size: 12px;
+}
+
+.min_wrap {
+  width: 100%;
+  position: relative;
+}
+.min_wrap .Bimg_wrap {
+  width: 100%;
+  height: 600px;
+  background-image: url(https://img.alicdn.com/tfs/TB1nK3kUcfpK1RjSZFOXXa6nFXa-2500-600.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.min_wrap .register_wrap {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  width: 300px;
+  height: 300px;
+  padding: 25px 25px 23px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.register p {
+  height: 18px;
+  color: #3c3c3c;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 9px;
+  padding-bottom: 8px;
+}
+.register .input_wrap {
+  margin-top: 20px;
+  position: relative;
+}
+.register .input_wrap i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #ddd;
+  text-align: center;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 16px;
+}
+.register input {
+  width: 240px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 8px 11px 50px;
+  border: 1px solid #ddd;
+}
+.register button {
+  width: 300px;
+  height: 42px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #f40;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 42px;
+  border-radius: 3px;
+  cursor: pointer;
+  zoom: 1;
+}
+.register button:hover {
+  background-color: #f52b00;
+}
+.register .way {
+  margin-top: 24px;
+  line-height: 14px;
+  font-size: 12px;
+}
+.register .way a {
+  color: #333;
+  display: inline-block;
+  margin-right: 20px;
+}
+.register .way a:hover {
+  color: #f40;
+}
+.register .way a span {
+  color: #f40;
+}
+.register .b_list {
+  margin-top: 25px;
+  overflow: hidden;
+  text-align: right;
+  font-size: 12px;
+}
+.register .b_list a {
+  color: #333;
+  margin-left: 10px;
+}
+.register .b_list a:hover {
+  color: #f40;
+}
+
+/* 底部导航链接开始 */
+.footer {
+  margin-top: 20px;
+  padding-bottom: 9px;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.wrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+/*footer头部*/
+.footer-hd {
+  padding-top: 7px;
+  border-top: 1px solid #ddd;
+}
+.footer-hd p {
+  margin-bottom: 8px;
+  line-height: 27px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+.footer-hd p span {
+  line-height: 27px;
+}
+.footer-hd p span a {
+  white-space: nowrap;
+  color: #6c6c6c;
+}
+.footer-hd p span a:hover {
+  color: #f40;
+}
+.footer-hd p b {
+  margin: 0 3px;
+  font-weight: 400;
+  color: #ddd;
+}
+
+/*foot主体内容*/
+.footer-bd p {
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+.footer-bd p span {
+  margin: 0 4px;
+  color: #9c9c9c;
+  margin: 0 3px;
+}
+.footer-bd p span a {
+  white-space: nowrap;
+  color: #6c6c6c;
+}
+.footer-bd p span a:hover {
+  color: #f40;
+}
+.footer-bd p b {
+  font-weight: 400;
+  color: #ddd;
+}
+.footer-bd p em {
+  margin-left: 30px;
+  font-style: normal;
+  color: #9c9c9c;
+}
+
+/*footer-pic*/
+.footer-pic {
+  display: inline-block;
+  background-position: -861px 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);
+  vertical-align: middle;
+}
+
+.footer-ft span {
+  margin: 0 4px;
+}
+.footer-ft span a {
+  width: 36px;
+  background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);
+  margin-right: 15px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.footer-pic-2 {
+  background-image: url(http://img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif) !important;
+}
+
+/* 底部导航链接结束 */
+
+/*# sourceMappingURL=login.css.map */

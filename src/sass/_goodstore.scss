@@ -1,0 +1,117 @@
+@charset "utf-8";
+.goodstore {
+    height: 538px;
+    background-color: #fff;
+}
+
+.goodstore_left {
+    float: left;
+    width: 590px;
+    height: 538px;
+}
+
+.goodstore_left_title {
+    //h3
+    padding-left: 20px;
+    position: relative;
+    padding-top: 20px;
+    .title_img {
+        height: 24px;
+        margin-right: 5px;
+    }
+    .box_stitle {
+        height: 24px;
+        line-height: 24px;
+        color: #999;
+        font-weight: 400;
+    }
+    .hd_rightbox {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 24px;
+        width: 100px;
+        line-height: 24px;
+        font-size: 12px;
+        text-align: right;
+        a {
+            color: #999
+        }
+    }
+}
+
+.goodstore_list {
+    padding-left: 12px;
+    li {
+        width: 271px;
+        padding: 6px 0 20px 0;
+        margin-left: 8px;
+        float: left;
+        &:hover .title {
+            color: #f40
+        }
+        h4 {
+            color: #333;
+            height: 42px;
+            line-height: 42px;
+            font-weight: normal;
+            span {
+                color: #999;
+                font-size: 12px;
+                margin-left: 6px;
+            }
+            .title {
+                color: #333;
+                font-size: 16px;
+                vertical-align: top;
+            }
+        }
+        .imgs {
+            position: relative;
+        }
+        .leftimg {
+            float: left;
+            width: 180px;
+            height: 180px;
+            overflow: hidden
+        }
+        .rightimg {
+            height: 180px;
+            margin-left: 182px;
+            img {
+                width: 89px;
+                height: 89px;
+                display: block;
+            }
+        }
+        h5 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 42px;
+            line-height: 42px;
+            overflow: hidden;
+            color: #fff;
+            z-index: 2;
+            font-size: 14px;
+            font-weight: normal;
+            padding-left: 5px;
+            span {
+                font-size: 12px;
+                width: 27px;
+                line-height: 42px;
+                margin-right: 2px;
+                background-color: #ff2658;
+                border-radius: 5px;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+.goodstore_right {
+    float: right;
+    width: 590px;
+    margin-left: 10px;
+    height: 538px;
+}

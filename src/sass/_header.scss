@@ -1,0 +1,170 @@
+@charset "utf-8";
+.header_top_wrap {
+    border-bottom: 1px solid #eee;
+    background-color: #f5f5f5;
+}
+
+.header_top_wrap li {
+    position: relative;
+}
+
+.header_top {
+    height: 35px;
+}
+
+.head_nav_hd a {
+    display: block;
+    color: #6c6c6c;
+}
+
+.head_nav_hd span {
+    margin-right: 5px;
+}
+
+.head_nav_hd .taobaogw {
+    margin: 0;
+    color: #f40
+}
+
+.head_nav_bd {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px #f5f5f5 solid;
+    border-top: 0
+}
+
+.head_nav_bd a {
+    display: block;
+    color: #6c6c6c;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 2px 0 8px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+
+/* left */
+
+.header_left {
+    float: left;
+    height: 35px;
+    li {
+        float: left;
+    }
+}
+
+.header_right>li {
+    float: left;
+}
+
+
+/* 地区 */
+
+.range_list {
+    position: absolute;
+    background: #fff;
+    height: 270px;
+    overflow-y: scroll;
+}
+
+.range_list a {
+    width: 242px;
+}
+
+
+/* 请登录 */
+
+.logon a {
+    display: inline;
+}
+
+.logon a:nth-child(1) {
+    color: #f05c06
+}
+
+
+/* right */
+
+.nav_border {
+    color: #bbb
+}
+
+.header_right {
+    float: right;
+    height: 34px;
+}
+
+.head_nav_hd,
+.nav_border {
+    padding: 0 6px;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+/*  网站导航 */
+
+.nav_nav_bottom {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 50px
+}
+
+.nav_nav_bottom>div {
+    float: left;
+    width: 33%;
+}
+
+.nav_nav_bottom h2 {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(228, 198, 32)
+}
+
+.nav_nav_bottom a {
+    width: 20%;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* hover*/
+
+.range_wrap:hover,
+.my_taobao:hover,
+.faovrites:hover,
+.nav_seller:hover,
+.nav_service:hover,
+.nav_nav:hover {
+    background-color: #fff;
+}
+
+.header_right li:hover .head_nav_bd {
+    display: block;
+}
+
+.range_wrap:hover .range_list {
+    display: block;
+}
+
+.head_nav_bd a:hover {
+    background-color: #eee;
+}
+
+.head_nav_hd a:hover {
+    color: rgb(243, 88, 16)
+}
+
+.nav_nav_bottom a:hover {
+    color: #fff;
+    background-color: rgb(241, 88, 16);
+}

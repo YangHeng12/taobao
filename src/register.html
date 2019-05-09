@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <meta name="description" content="淘宝网(Taobao.com)作为专业的购物网站拥有全球时尚前沿的消费者购物集市,100%认证网上商城及超值二手商品区，同时购物安全，产品丰富，应有尽有,任你选购,让你尽享网上在线购物乐趣！">
+    <meta name="keywords" content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖，购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺">
+    <link rel="shortcut icon" href="//img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <!-- 1.最顶部头部盒子 -->
+    <div class="header_top_wrap"></div>
+    <!-- 中间内容 -->
+    <div class="main_wrap">
+        <div class="main_hd">
+            <h1 id="logo_wrap">
+                <a href="#"><img src="img/logo.png"></a>
+                <p>用户注册</p>
+            </h1>
+            <div class="loginflow">
+                <ul>
+                    <li class="active"><i>1</i><span>设置用户信息</span></li>
+                    <li><i>2</i><span>填写注册信息</span></li>
+                    <li><i>3</i><span>设置支付方式</span></li>
+                    <li><i>4</i><span>注册成功</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_bd">
+            <section>
+                <div class="logo_title">
+                    <h3>注册新用户
+                        <span>我已经注册，现在就<a href="login.html">登录</a></span>
+                    </h3>
+                </div>
+                <!-- 登录框 -->
+                <div class="login">
+                    <div class="show">
+                        <form action="" method="POST" id="checkform">
+                            <div class="input__wrap">
+                                <label class="fwidth" for="username">用户名：</label>
+                                <input type="text" name="username" id="username" autofocus="autofocus" />
+                                <label class="error" for="username">(必填，4-10字符长度，支持汉字、字母、数字及_)</label>
+                                <!-- 1.表单提示信息  2.存放报错信息 -->
+                            </div>
+                            <div class="input__wrap">
+                                <label class="fwidth" for="password">密码：</label>
+                                <input type="password" name="password" id="password" />
+                                <label class="error" for="password">(必填，不得少于6位，最多12位)</label>
+                            </div>
+                            <div class="input__wrap">
+                                <label class="fwidth" for="repass">密码重复：</label>
+                                <input type="password" name="repass" id="repass" />
+                                <label class="error" for="repass">(必填，不得少于6位，最多12位)</label>
+                            </div>
+                            <div class="input__wrap">
+                                <label class="fwidth" for="IP">手机号码：</label>
+                                <input type="text" name="IP" id="IP" />
+                                <label class="error" for="IP">(必填)</label>
+                            </div>
+                            <div class="bt">
+                                <span>
+                                <input class="agree" type="checkbox">
+                                    请阅读<a href="#">《淘宝国际服务条款》</a>
+                                </span>
+                                <input class="vancl_registor" type="submit" value="注册" name="submit" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 1.底部部盒子 -->
+    <footer id="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js "></script>
+    <script src="script/thirdplugins/jquery.validate.js"></script>
+    <script src="script/js/load.js"></script>
+    <script src="script/js/register.js"></script>
+</body>
+
+</html>

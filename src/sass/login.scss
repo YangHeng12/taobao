@@ -1,0 +1,171 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_6hsoce44u3y/iconfont.woff') format('woff');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header_top 开始*/
+
+.header_hd {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 22px 0;
+    height: 44px;
+    #logo_wrap {
+        display: block;
+        float: left;
+        zoom: 1;
+        width: 110px;
+        height: 44px;
+        img {
+            width: 110px;
+        }
+    }
+    .hd_left {
+        width: 880px;
+        color: #6C6C6C;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #ffb4a8;
+        background-color: #fef2f2;
+        line-height: 16px;
+        padding: 6px 10px;
+        overflow: hidden;
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+// 中间部分开始
+.min_wrap {
+    width: 100%;
+    position: relative;
+    .Bimg_wrap {
+        width: 100%;
+        height: 600px;
+        background-image: url(https://img.alicdn.com/tfs/TB1nK3kUcfpK1RjSZFOXXa6nFXa-2500-600.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .register_wrap {
+        position: absolute;
+        top: 120px;
+        right: 60px;
+        width: 300px;
+        height: 300px;
+        padding: 25px 25px 23px;
+        background-color: rgba(255, 255, 255, .9);
+    }
+}
+
+// 登录框
+.register {
+    p {
+        height: 18px;
+        color: #3c3c3c;
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 9px;
+        padding-bottom: 8px;
+    }
+    .input_wrap {
+        margin-top: 20px;
+        position: relative;
+        i {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            background: #ddd;
+            text-align: center;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            font-size: 16px;
+        }
+    }
+    input {
+        width: 240px;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 11px 8px 11px 50px;
+        border: 1px solid #ddd;
+    }
+    button {
+        width: 300px;
+        height: 42px;
+        border: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background: #f40;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        line-height: 42px;
+        border-radius: 3px;
+        cursor: pointer;
+        zoom: 1;
+        &:hover {
+            background-color: #f52b00;
+        }
+    }
+    .way {
+        margin-top: 24px;
+        line-height: 14px;
+        font-size: 12px;
+        a {
+            color: #333;
+            display: inline-block;
+            margin-right: 20px;
+            &:hover {
+                color: #f40
+            }
+            span {
+                color: #f40;
+            }
+        }
+    }
+    .b_list {
+        margin-top: 25px;
+        overflow: hidden;
+        text-align: right;
+        font-size: 12px;
+        a {
+            color: #333;
+            margin-left: 10px;
+            &:hover {
+                color: #f40
+            }
+        }
+    }
+}
+
+
+/* 底部导航链接开始 */
+
+@import "footer";
+
+/* 底部导航链接结束 */

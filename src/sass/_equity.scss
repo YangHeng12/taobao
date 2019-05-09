@@ -1,0 +1,36 @@
+@charset "utf-8";
+.equity {
+    height: 180px;
+}
+
+.boxlist {
+    padding-top: 40px;
+    height: 140px;
+    .wrap {
+        box-sizing: border-box;
+        float: left;
+        margin-right: -1px;
+        padding: 0 25px;
+        width: 25%;
+        h4 {
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-style: normal;
+            color: #3C3C3C;
+            span {
+                margin-right: 12px;
+                font-size: 32px;
+                color: #999;
+            }
+        }
+        li {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            a {
+                color: #999;
+                line-height: 24px;
+            }
+        }
+    }
+}

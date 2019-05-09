@@ -1,0 +1,101 @@
+@charset "utf-8";
+.shopping {
+    height: 668px;
+}
+
+.shopping_left,
+.shopping_right {
+    position: relative;
+    width: 590px;
+    height: 658px;
+    float: left;
+    background-color: #fff;
+    h3 {
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .title_img {
+            height: 24px;
+            margin-right: 5px;
+        }
+        .Bimg_wrap {
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            width: 72px;
+            height: 80px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            display: none;
+            img {
+                width: 66px;
+                height: 66px;
+                margin-bottom: 5px;
+            }
+            em {
+                color: #666;
+                font-weight: 400;
+                font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+            }
+        }
+        .Bimg_xs:hover {
+            .Bimg_wrap {
+                display: block;
+            }
+        }
+        .box_stitle {
+            line-height: 24px;
+            height: 24px;
+            color: #999;
+            font-weight: 400;
+        }
+    }
+    ul {
+        overflow: hidden;
+        padding-left: 21px;
+        a {
+            display: block;
+            float: left;
+            width: 180px;
+            overflow: hidden;
+            margin: 0 4px 17px 0;
+            color: #3C3C3C;
+            &:hover {
+                h4 {
+                    color: #f40;
+                }
+            }
+            h4 {
+                margin-top: 5px;
+                font-size: 16px;
+                height: 28px;
+                line-height: 28px;
+                overflow: hidden;
+                font-weight: normal;
+                transform: color 1s
+            }
+            p {
+                height: 24px;
+                line-height: 24px;
+                color: #999;
+                font-size: 14px;
+                overflow: hidden;
+            }
+            .likenum {
+                line-height: 22px;
+                height: 22px;
+                margin-top: 12px;
+                color: #35b1ff;
+            }
+        }
+    }
+}
+
+.shopping_right {
+    width: 590px;
+    float: left;
+    margin-left: 10px;
+    height: 658px;
+}

@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* 猜你喜欢 */
+
+.conjecture {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+// 头部标题
+.conjecture_hd {
+    .box_hd {
+        color: #ff9f00;
+        i {
+            background-image: linear-gradient(45deg, #fad961, #ff9f00);
+            background: #ff9f00;
+        }
+    }
+}
+
+
+/* 底部商品列表 */
+
+.conjecture_bd {
+    li {
+        float: left;
+        width: 196px;
+        height: 312px;
+        padding: 20px 20px 0 20px;
+        border: 1px solid transparent;
+        border-right-color: #f4f4f4;
+        border-bottom-color: #f4f4f4;
+        color: #6c6c6c;
+        overflow: hidden;
+        position: relative;
+        transition: border-color 0.3s;
+        &:hover {
+            border-color: #f40;
+        }
+        a {
+            display: block;
+            width: 197px;
+            height: 197px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h4 {
+            height: 44px;
+            line-height: 22px;
+            color: #666;
+            font-size: 14px;
+            font-weight: normal;
+            transition: color 0.3s;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+        p {
+            margin-top: 22px;
+            height: 24px;
+            line-height: 24px;
+            span {
+                color: #f40;
+                font-size: 20px;
+                i {
+                    font-style: normal;
+                    font-size: 12px;
+                }
+            }
+            em {
+                float: right;
+                color: #9ca0aa;
+                margin-top: 3px;
+                font-style: normal;
+            }
+        }
+    }
+}
