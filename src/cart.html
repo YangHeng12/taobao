@@ -39,33 +39,7 @@
                     <span></span>
                 </a>
             </h1>
-            <div class="right">
-                <div class="baby">
-                    <ul>
-                        <li>
-                            <a href="javascript:;">宝贝</a>
-                        </li>
-                    </ul>
-                    <s></s>
-                </div>
-                <div class="right-box-1">
-                    <form>
-                        <div class="btn">
-                            <button type="submit">搜索</button>
-                        </div>
-                        <div class="input">
-                            <div class="input-1">
-                                <div>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <i></i>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
-
         <div class="nav">
             <ul>
                 <li>
@@ -91,7 +65,7 @@
             </ul>
             <div class="right-nav">
                 <span>已选商品（不含运费）</span>
-                <strong><span>&nbsp;    </span>0.00</strong>
+                <strong>0.00</strong>
                 <a href="javascript:;">结&nbsp;算</a>
             </div>
             <div class="line">
@@ -99,38 +73,30 @@
             </div>
         </div>
         <!-- 购物车 --------------------------------------------- -->
-        <!-- <div class="shop-car">
-            <div class="shop-car-xuan left">
-                <div>
-                    <input type="checkbox">&nbsp;&nbsp;全选
+        <div class="cart_thead">
+            <div class="cart_title t_checkbox">
+                <div class="cart_checkbox">
+                    <input type="checkbox" />全选
                 </div>
             </div>
-            <div class="xinxi left">
-                <div>商品信息</div>
-            </div>
-            <div class="left init">
-                <div>&nbsp;</div>
-            </div>
-            <div class="shop-car-pic left">
-                <div>单价</div>
-            </div>
-            <div class="shop-car-pic left">
-                    <div>数量</div>
-                </div>
-                <div class="shop-car-pic left">
-                        <div>金额</div>
-                    </div>
-                    <div class="shop-car-pic left">
-                            <div>操作</div>
-                        </div>
-            
+            <div class="cart_title t_goods">商品</div>
+            <div class="cart_title t_props"></div>
+            <div class="cart_title t_prices">单价(元)</div>
+            <div class="cart_title t_quantity">数量</div>
+            <div class="cart_title t_sum">小计(元)</div>
+            <div class="cart_title t_action">操作</div>
         </div>
-        <div></div>
-    </div> -->
-        <div id="footer"></div>
-        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-        <script src="script/js/load.js"></script>
-
+        <!--购物车为空时显示的盒子-->
+        <div class="empty_cart">
+            <span class="empty_cart_msg">
+                购物车空空的哦~，去看看心仪的商品吧~
+                <a href="http://10.31.163.84/1902%20JS/st/projectname/src/index1.html">去购物></a>
+            </span>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="script/js/load.js"></script>
 </body>
 
 </html>

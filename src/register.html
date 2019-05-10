@@ -42,11 +42,11 @@
                 <!-- 登录框 -->
                 <div class="login">
                     <div class="show">
-                        <form action="" method="POST" id="checkform">
+                        <form action="http://10.31.163.84/1902%20JS/st/projectname/php/register.php" method="POST" id="checkform">
                             <div class="input__wrap">
                                 <label class="fwidth" for="username">用户名：</label>
                                 <input type="text" name="username" id="username" autofocus="autofocus" />
-                                <label class="error" for="username">(必填，4-10字符长度，支持汉字、字母、数字及_)</label>
+                                <label class="error" for="username" id="namerepetition">(必填，4-10字符长度，支持汉字、字母、数字及_)</label>
                                 <!-- 1.表单提示信息  2.存放报错信息 -->
                             </div>
                             <div class="input__wrap">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="bt">
                                 <span>
-                                <input class="agree" type="checkbox">
+                                <input class="agree" type="checkbox" checked="checked">
                                     请阅读<a href="#">《淘宝国际服务条款》</a>
                                 </span>
                                 <input class="vancl_registor" type="submit" value="注册" name="submit" />

@@ -113,7 +113,7 @@
                         $.each(data, function(index, value) {
                             $str += `<li>
                                         <a href="http://10.31.163.84/1902%20JS/st/projectname/src/details.html?sid=${value.sid}" target="_blank">
-                                            <img src="${value.url}">
+                                            <img class="lazy" data-original="${value.url}" width="197px" height="197px"/>
                                         </a>
                                         <h4>${value.title}</h4>
                                         <p>
@@ -126,6 +126,12 @@
                                     </li>`;
                         });
                         $el.$oUl.html($str);
+                        $(function() {
+                            $("img.lazy").lazyload({
+                                placeholder: "https://wwc.alicdn.com/avatar/getAvatar.do?userNick=&width=50&height=50&type=sns&_input_charset=UTF-8",
+                                effect: "fadeIn"
+                            });
+                        });
                     }
                 })
             }

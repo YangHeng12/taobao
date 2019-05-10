@@ -5,14 +5,14 @@ $(function() {
                 required: true,
                 minlength: 4,
                 maxlength: 10,
-                // remote: { //后端返回的结果一定是true或者false字符串。
-                //     type: 'post',
-                //     url: 'reg.php'
-                // }
+                remote: { //后端返回的结果一定是true或者false字符串。
+                    type: 'post',
+                    url: 'http://10.31.163.84/1902%20JS/st/projectname/php/register.php'
+                }
             },
             password: {
                 required: true,
-                rangelength: [6, 12]
+                rangelength: [6, 12],
             },
             repass: {
                 required: true,
@@ -28,13 +28,13 @@ $(function() {
         messages: {
             username: {
                 required: '<em class="err">用户名不能为空</em>',
-                minlength: '用户名不能小于4',
-                maxlength: '用户名不能大于10',
-                remote: '<em class="err">用户名已存在</em>'
+                minlength: '用户名不能小于4位',
+                maxlength: '用户名不能大于10位',
+                remote: '<span class="err">用户名已存在</span>'
             },
             password: {
                 required: '密码不能为空',
-                minlength: '密码不能小于6位不能大于12位'
+                rangelength: '密码不能小于6位不能大于12位'
             },
             repass: {
                 required: '密码重复不能为空',
@@ -43,8 +43,8 @@ $(function() {
             IP: {
                 required: '手机号码不能为空',
                 digits: '你输入的格式有误',
-                minlength: '长度不能小于11位',
-                maxlength: '长度不能大于11位',
+                minlength: '格式有误：长度不能小于11位',
+                maxlength: '格式有误：长度不能超出11位',
             }
         }
 
@@ -58,3 +58,30 @@ $.validator.setDefaults({
         label.append('<img src="http://10.31.163.84/1902%20JS/st/projectname/src/img/signed-right-icon.png">');
     }
 });
+
+
+
+
+// 阅读条款
+;
+(function() {
+    let $agree = $(".agree");
+    let $vancl_registor = $('.vancl_registor');
+    if ($agree.prop("checked")) {
+        $vancl_registor.css({
+            background: "#f40"
+        })
+    }
+
+    $agree.on("click", function() {
+        if ($agree.prop("checked")) {
+            $vancl_registor.css({
+                background: "#f40"
+            })
+        } else {
+            $vancl_registor.css({
+                background: '#9A9A9A'
+            })
+        }
+    })
+})();
