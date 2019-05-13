@@ -367,11 +367,20 @@ em {
   height: 25px;
   line-height: 25px;
 }
+.right-nav .synum {
+  margin-right: 30px;
+}
+.right-nav .synum i {
+  color: red;
+  margin-right: 10px;
+}
 .right-nav strong {
+  display: inline-block;
   font-weight: 700;
   margin-right: 5px;
   color: #f40;
   padding-left: 2px;
+  width: 100px;
 }
 .right-nav a {
   background: #aaa;
@@ -383,7 +392,6 @@ em {
   text-align: center;
 }
 
-/* /*------------------ */
 .line {
   clear: both;
   background: #e6e6e6;
@@ -392,7 +400,7 @@ em {
 }
 
 .line div {
-  width: 141px;
+  width: 122px;
   background: #f40;
   height: 2px;
   position: absolute;
@@ -401,7 +409,6 @@ em {
   overflow: hidden;
 }
 
-/* <!-- 购物车 ----------------------------------------------->    */
 .empty_cart {
   height: 98px;
   padding: 80px 0 120px;
@@ -457,7 +464,6 @@ em {
   width: 140px;
   height: 32px;
   padding: 0 20px;
-  text-align: right;
 }
 .cart_thead .t_prices {
   width: 120px;
@@ -473,6 +479,93 @@ em {
   width: 100px;
   padding-right: 40px;
   text-align: right;
+}
+
+.ullist {
+  width: 990px;
+  margin: 0 auto;
+  font-size: 12px;
+  overflow: hidden;
+  border-bottom: 1px #999 solid;
+  padding-bottom: 20px;
+}
+.ullist .checkboxlist {
+  width: 122px;
+  padding-left: 11px;
+}
+.ullist .imgbox {
+  width: 208px;
+  font-size: 0;
+  position: relative;
+}
+.ullist .imgbox img {
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+}
+.ullist .imgbox span {
+  font-size: 12px;
+  position: absolute;
+  line-height: 16px;
+  top: 20px;
+}
+.ullist .imgtitle {
+  width: 140px;
+  padding: 10px 20px;
+  position: relative;
+}
+.ullist .imgtitle span {
+  position: absolute;
+  top: 20px;
+  line-height: 16px;
+}
+.ullist .imgjg {
+  width: 120px;
+  padding-right: 40px;
+  text-align: right;
+}
+.ullist .imgnum {
+  text-align: center;
+  width: 80px;
+}
+.ullist .imgmoy {
+  width: 100px;
+  padding-right: 40px;
+  text-align: right;
+}
+.ullist .deletimg {
+  width: 88px;
+}
+.ullist .deletimg button {
+  background-color: #f40;
+  border: 1px solid #f40;
+  cursor: pointer;
+  color: #fff;
+}
+.ullist li {
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  border-bottom: 1px #eee solid;
+  padding: 10px 0;
+}
+
+.deleteqbbtn {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  height: 40px;
+}
+.deleteqbbtn a {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f40;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 /* 底部导航链接开始 */

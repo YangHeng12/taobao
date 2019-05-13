@@ -222,11 +222,20 @@ em {
     top: 0;
     height: 25px;
     line-height: 25px;
+    .synum {
+        margin-right: 30px;
+        i {
+            color: red;
+            margin-right: 10px;
+        }
+    }
     strong {
+        display: inline-block;
         font-weight: 700;
         margin-right: 5px;
         color: #f40;
         padding-left: 2px;
+        width: 100px;
     }
     a {
         background: #aaa;
@@ -239,9 +248,6 @@ em {
     }
 }
 
-
-/* /*------------------ */
-
 .line {
     clear: both;
     background: #e6e6e6;
@@ -250,7 +256,7 @@ em {
 }
 
 .line div {
-    width: 141px;
+    width: 122px;
     background: #f40;
     height: 2px;
     position: absolute;
@@ -259,9 +265,7 @@ em {
     overflow: hidden;
 }
 
-
-/* <!-- 购物车 ----------------------------------------------->    */
-
+// 购物车
 .empty_cart {
     height: 98px;
     padding: 80px 0 120px;
@@ -316,7 +320,6 @@ em {
         width: 140px;
         height: 32px;
         padding: 0 20px;
-        text-align: right;
     }
     .t_prices {
         width: 120px;
@@ -332,6 +335,95 @@ em {
         width: 100px;
         padding-right: 40px;
         text-align: right;
+    }
+}
+
+// 购物车商品列表
+.ullist {
+    width: 990px;
+    margin: 0 auto;
+    font-size: 12px;
+    overflow: hidden;
+    border-bottom: 1px #999 solid;
+    padding-bottom: 20px;
+    .checkboxlist {
+        width: 122px;
+        padding-left: 11px;
+    }
+    .imgbox {
+        width: 208px;
+        font-size: 0;
+        position: relative;
+        img {
+            width: 50%;
+            height: 100%;
+            margin-right: 10px;
+        }
+        span {
+            font-size: 12px;
+            position: absolute;
+            line-height: 16px;
+            top: 20px;
+        }
+    }
+    .imgtitle {
+        width: 140px;
+        padding: 10px 20px;
+        position: relative;
+        span {
+            position: absolute;
+            top: 20px;
+            line-height: 16px;
+        }
+    }
+    .imgjg {
+        width: 120px;
+        padding-right: 40px;
+        text-align: right;
+    }
+    .imgnum {
+        text-align: center;
+        width: 80px;
+    }
+    .imgmoy {
+        width: 100px;
+        padding-right: 40px;
+        text-align: right;
+    }
+    .deletimg {
+        width: 88px;
+        button {
+            background-color: #f40;
+            border: 1px solid #f40;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+    li {
+        height: 100px;
+        line-height: 100px;
+        float: left;
+        border-bottom: 1px #eee solid;
+        padding: 10px 0;
+    }
+}
+
+// 删除选中商品按钮
+.deleteqbbtn {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    height: 40px;
+    a {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #f40;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 5px;
     }
 }
 

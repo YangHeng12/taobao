@@ -1870,6 +1870,10 @@ a {
   width: 197px;
   height: 197px;
 }
+.conjecture_bd li a img {
+  width: 197px;
+  height: 197px;
+}
 .conjecture_bd li h4 {
   height: 44px;
   line-height: 22px;

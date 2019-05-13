@@ -11,27 +11,11 @@
     <link rel="shortcut icon" href="//img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cart.css">
-    <style>
-        @font-face {
-            font-family: iconfont;
-            src: url(fonts/font_1451959379_8626566.woff) format("woff")
-        }
-        
-        .iconfont {
-            font-family: iconfont !important;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke-width: .2px;
-            color: #f40;
-            font-weight: 400
-        }
-    </style>
-
 </head>
 
 <body>
     <div class="header_top_wrap"></div>
-    <!-- banner图 -->
+
     <div class="wrapper">
         <div class="banner-hd">
             <h1 class="left">
@@ -45,28 +29,29 @@
                 <li>
                     <a href="#">
                         <em>全部商品</em>
-                        <span class="num">0</span>
+                        <span class="num">&gt;</span>
                         <span class="pipe"></span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <em style="color:black">降价商品</em>
-                        <span class="num">0</span>
+                        <span class="num">&gt;</span>
                         <span class="pipe"></span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <em style="color:black">库存紧张</em>
-                        <span class="num">0</span>
+                        <span class="num">&gt;</span>
                     </a>
                 </li>
             </ul>
             <div class="right-nav">
-                <span>已选商品（不含运费）</span>
+                <span class="synum">总数量：<i>0</i>件</span>
+                <span>已选商品价格：</span>
                 <strong>0.00</strong>
-                <a href="javascript:;">结&nbsp;算</a>
+                <a href="javascript:;" id="allbtn">结&nbsp;算</a>
             </div>
             <div class="line">
                 <div></div>
@@ -80,23 +65,33 @@
                 </div>
             </div>
             <div class="cart_title t_goods">商品</div>
-            <div class="cart_title t_props"></div>
+            <div class="cart_title t_props">标题</div>
             <div class="cart_title t_prices">单价(元)</div>
             <div class="cart_title t_quantity">数量</div>
             <div class="cart_title t_sum">小计(元)</div>
             <div class="cart_title t_action">操作</div>
         </div>
-        <!--购物车为空时显示的盒子-->
-        <div class="empty_cart">
-            <span class="empty_cart_msg">
-                购物车空空的哦~，去看看心仪的商品吧~
-                <a href="http://10.31.163.84/1902%20JS/st/projectname/src/index1.html">去购物></a>
-            </span>
+
+        <!-- 显示商品列表的盒子 -->
+        <div class="ullist">
+            <div class="empty_cart">
+                <span class="empty_cart_msg">
+                    购物车空空的哦~，去看看心仪的商品吧~
+                    <a href="http://10.31.163.84/1902%20JS/st/projectname/src/index1.html">去购物></a>
+                </span>
+            </div>
+        </div>
+        <div class="deleteqbbtn">
+            <a href="javascript:;">
+                删除选中商品
+            </a>
         </div>
     </div>
     <div id="footer"></div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="script/js/load.js"></script>
+    <script src="script/thirdplugins/cookie.js"></script>
+    <script src="script/js/cart.js"></script>
 </body>
 
 </html>
